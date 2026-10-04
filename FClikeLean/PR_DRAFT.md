@@ -12,7 +12,7 @@ Before opening the pull request:
    (`Copyright 2026 The Formal Conjectures Authors.` and the Apache License notice, which the
    copyright linter requires), and run
    `lake --wfail build 'FormalConjectures.Arxiv.«2411.12208».QuantumExtremalNumber'`.
-   (Checked on commit `df3f12d7bd06feb3f71ae37abae0ca7cb798d9b1` with placeholder links.)
+   (Checked on commit `df3f12d7bd06feb3f71ae37abae0ca7cb798d9b1` with the final links.)
 3. Optionally open an issue first, as
    [CONTRIBUTING.md](https://github.com/google-deepmind/formal-conjectures/blob/main/CONTRIBUTING.md)
    suggests.

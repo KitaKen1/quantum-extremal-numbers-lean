@@ -1,13 +1,4 @@
-✔ [8941/8951] Built Qex94.Statement (120s)
-✔ [8942/8951] Built Qex94.Basic (115s)
-✔ [8943/8951] Built Qex94.Link (52s)
-✔ [8944/8951] Built Qex94.Shadow (52s)
-✔ [8945/8951] Built Qex94.Lower (54s)
-✔ [8946/8951] Built Qex94.Main (16s)
-✔ [8947/8951] Built Qex94.Main11 (18s)
-✔ [8948/8951] Built Qex94.Main10 (18s)
-✔ [8949/8951] Built Qex94 (15s)
-ℹ [8951/8951] Built Qex94.Audit (15s)
+ℹ [8951/8951] Replayed Qex94.Audit
 info: Qex94/Audit.lean:11:0: 'QuantumExtremalNumber.qex_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: Qex94/Audit.lean:12:0: 'QuantumExtremalNumber.numMaximallyMixed_le_112' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: Qex94/Audit.lean:13:0: 'QuantumExtremalNumber.exists_state_112' depends on axioms: [propext, Classical.choice, Quot.sound]
