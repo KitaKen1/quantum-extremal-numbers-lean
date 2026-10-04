@@ -1,0 +1,15 @@
+name = "qex94"
+version = "0.1.0"
+defaultTargets = ["Qex94"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "formal_conjectures"
+git = "https://github.com/google-deepmind/formal-conjectures"
+rev = "df3f12d7bd06feb3f71ae37abae0ca7cb798d9b1"
+
+[[lean_lib]]
+name = "Qex94"

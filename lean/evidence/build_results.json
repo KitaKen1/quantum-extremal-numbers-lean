@@ -1,0 +1,147 @@
+{
+  "status": "PASS",
+  "scope": "Qex(9,4) = 112, Qex(10,5) <= 208 and Qex(11,5) <= 422 for all normalized complex pure states, in the FC definitions",
+  "formal_target_theorems": [
+    "QuantumExtremalNumber.qex_nine : Qex 9 4 = answer(112)",
+    "QuantumExtremalNumber.qex_ten.variants.upper : Qex 10 5 ≤ 208",
+    "QuantumExtremalNumber.qex_eleven.variants.upper : Qex 11 5 ≤ 422"
+  ],
+  "checked_at": "2026-10-04T02:36:46.504955+00:00",
+  "command": "lake --wfail build Qex94 Qex94.Audit",
+  "exit_code": 0,
+  "elapsed_seconds": 332.016,
+  "timing_note": "Lake may reuse compiled modules; elapsed time is not pure checking time.",
+  "lean_version": "leanprover/lean4:v4.33.1",
+  "fc_commit": "df3f12d7bd06feb3f71ae37abae0ca7cb798d9b1",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "axiom_audit_passed": true,
+  "axioms": {
+    "QuantumExtremalNumber.qex_nine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.numMaximallyMixed_le_112": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.exists_state_112": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.Abstract.abstract_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.shadow_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.pur_le_two_mul_pur_insert": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.purC_of_isMaximallyMixedOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.purC_empty_of_norm_eq_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.qex_ten.variants.upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.numMaximallyMixed_le_208": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.Abstract10.abstract_bound_ten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.shadow_nonneg_set": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.shadow_ten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.qex_eleven.variants.upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.numMaximallyMixed_le_422": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.Abstract11.abstract_bound_eleven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.KK11.forty_le_card_shadow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.subsystem_shadow_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.moebius_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.shadow_eleven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "statement_definitions_match_fc_file": true,
+  "fc_statement_file_compiles": true,
+  "source_sha256": {
+    "qex94/Qex94/Abstract.lean": "c9bccdd0217b6951d9aee27993b042455d14bdb0325fea1a33d04257d4440336",
+    "qex94/Qex94/Abstract10.lean": "26a4a77c952527b66b5a5993f34499487ea1299fba8dc0fa1be0b86ed5b611c8",
+    "qex94/Qex94/Abstract11.lean": "8eeb7f68c4c995371e2d476e1b8d1dc5b0fa58e9e8dc5e3fac0134f8a107b260",
+    "qex94/Qex94/Audit.lean": "c20d628e2bc3af16863dc2fbb8ff15ae41c521c6d899a910eabbd0ba8de464ff",
+    "qex94/Qex94/Basic.lean": "9f5a6397985e1618b2c1ea19c51cb8fd716e814af57eee360a5fd71e7f63c787",
+    "qex94/Qex94/KK11.lean": "55686ecbf1982d1d05bdeeb9fa6b15da0cce190cffae91fc13cc41b7518209cd",
+    "qex94/Qex94/Link.lean": "56cd730fc1ef9e49118636578a7f1ed40b03b00eaf10a1a7ffd976b531532c6b",
+    "qex94/Qex94/Lower.lean": "2da2a5965ba3387a6631f43f18af2fa552eb7e53e00bd17cb5c61000dfb99176",
+    "qex94/Qex94/Main.lean": "daf2561f706762ec0efcc6bf76eb1c541b464e3dc63e12bbfd83e37ddfa78014",
+    "qex94/Qex94/Main10.lean": "8cbcf49307161863a18054e706ce974955b89b313cfdae15987d75b72dc51ef2",
+    "qex94/Qex94/Main11.lean": "a57cc8bfa1c79d9a06b46201585d2dfa0c483568a5233b3d645530b2a852df69",
+    "qex94/Qex94/PurityFacts.lean": "ffcd6027e648eb56ffd7ea6d1e91ba0e965dccfc5eeacf8183bdfb5072ef1002",
+    "qex94/Qex94/Shadow.lean": "23c29781e9dae413d37e3ffdea1daaed770639cd3f2a4354460de309003f577e",
+    "qex94/Qex94/SignSums.lean": "b1dafbd109f25bf4daed034afd005f2895dd505e1c7ad85c56de207940af0cd1",
+    "qex94/Qex94/Statement.lean": "1062615b49d7c153628ac126235bf4fdcf5c2dd14491b67cd1489e2518daf13a",
+    "qex94/Qex94.lean": "06bbd91675fe8a68943c38c3ecc3619fb53203ed181648d8aac1fd1a855590ab",
+    "qex94/FClike/QuantumExtremalNumber.lean": "f7a18bbb253f765296779cc7816ff0ab8a0b03cde738398ca4a64d03c00ed683",
+    "qex94/lakefile.toml": "c1fed12f58f72d9f6996d7adaafc3d8ac03b6f8dfe001ea900f8a7c1bcbd999a",
+    "qex94/lake-manifest.json": "7ec92e0f6b5c3d062fb2935e54dbd3570ebdad764addd4431ede8b6557280d9f",
+    "qex94/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "qex94/scripts/build_audit.py": "26992f2e59ac90344f0f8d3e30a9943fd23add81f5cff156e0fb9a9e133852d5",
+    "qex94/scripts/fill_links.py": "5a5cd377e1484945d4498b93843f7b6e85b44c0d8c774cd2476a2e47fe9acd80",
+    "qex94/scripts/make_lean4web.py": "a3d581c04a93395961176f48d4495468bce8433055768f96b3ac241db2929773"
+  }
+}

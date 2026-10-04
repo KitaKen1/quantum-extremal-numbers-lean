@@ -1,0 +1,31 @@
+✔ [8941/8951] Built Qex94.Statement (120s)
+✔ [8942/8951] Built Qex94.Basic (115s)
+✔ [8943/8951] Built Qex94.Link (52s)
+✔ [8944/8951] Built Qex94.Shadow (52s)
+✔ [8945/8951] Built Qex94.Lower (54s)
+✔ [8946/8951] Built Qex94.Main (16s)
+✔ [8947/8951] Built Qex94.Main11 (18s)
+✔ [8948/8951] Built Qex94.Main10 (18s)
+✔ [8949/8951] Built Qex94 (15s)
+ℹ [8951/8951] Built Qex94.Audit (15s)
+info: Qex94/Audit.lean:11:0: 'QuantumExtremalNumber.qex_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:12:0: 'QuantumExtremalNumber.numMaximallyMixed_le_112' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:13:0: 'QuantumExtremalNumber.exists_state_112' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:14:0: 'QuantumExtremalNumber.Abstract.abstract_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:15:0: 'QuantumExtremalNumber.shadow_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:16:0: 'QuantumExtremalNumber.pur_le_two_mul_pur_insert' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:17:0: 'QuantumExtremalNumber.purC_of_isMaximallyMixedOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:18:0: 'QuantumExtremalNumber.purC_empty_of_norm_eq_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:19:0: 'QuantumExtremalNumber.qex_ten.variants.upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:20:0: 'QuantumExtremalNumber.numMaximallyMixed_le_208' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:21:0: 'QuantumExtremalNumber.Abstract10.abstract_bound_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:22:0: 'QuantumExtremalNumber.shadow_nonneg_set' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:23:0: 'QuantumExtremalNumber.shadow_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:24:0: 'QuantumExtremalNumber.qex_eleven.variants.upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:25:0: 'QuantumExtremalNumber.numMaximallyMixed_le_422' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:26:0: 'QuantumExtremalNumber.Abstract11.abstract_bound_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:27:0: 'QuantumExtremalNumber.KK11.forty_le_card_shadow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:28:0: 'QuantumExtremalNumber.subsystem_shadow_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:29:0: 'QuantumExtremalNumber.moebius_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Qex94/Audit.lean:30:0: 'QuantumExtremalNumber.shadow_eleven' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (8951 jobs).
