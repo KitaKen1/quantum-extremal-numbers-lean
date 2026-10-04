@@ -17,7 +17,7 @@ public import FormalConjecturesUtil
   qubits do not exist*, Phys. Rev. Lett. **118** (2017), 200502.
   [arXiv:1608.06228](https://arxiv.org/abs/1608.06228)
 - [Kit26] K. Kitamura, *A Lean proof that $\mathrm{Q}_{ex}(9) = 112$, with new bounds for 10 and
-  11 qubits* (2026). [GitHub](https://github.com/KitaKen1/REPO)
+  11 qubits* (2026). [GitHub](https://github.com/KitaKen1/quantum-extremal-numbers-lean)
 -/
 
 @[expose] public section
@@ -77,7 +77,7 @@ theorem qex_eight : Qex 8 4 = 56 := by
 [Kit26]. -/
 @[category research solved, AMS 5 81,
   formal_proof using lean4 at
-    "https://github.com/KitaKen1/REPO/blob/COMMIT/lean/Qex94/Main.lean#LQEX_NINE"]
+    "https://github.com/KitaKen1/quantum-extremal-numbers-lean/blob/7d7e3afdadabdb2fa964cea99711d05fc5652022/lean/Qex94/Main.lean#L75"]
 theorem qex_nine : Qex 9 4 = answer(112) := by
   sorry
 

@@ -53,7 +53,7 @@ assumption; the uniformity needed in the proof is derived. For 10 and 11 qubits 
 bounds only, and the exact values remain open.
 
 **Try it in Lean4Web:**
-[open the complete proof in one file](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2FREPO%2Frefs%2Fheads%2Fmain%2Flean4web%2FQex94Lean4Web.lean)
+[open the complete proof in one file](https://live.lean-lang.org/#url=https%3A%2F%2Fraw.githubusercontent.com%2FKitaKen1%2Fquantum-extremal-numbers-lean%2Frefs%2Fheads%2Fmain%2Flean4web%2FQex94Lean4Web.lean)
 (Lean4Web's default "Latest Mathlib" project; the file also checks on "Stable Release").
 
 ## Formal Conjectures target

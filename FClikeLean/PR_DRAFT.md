@@ -2,10 +2,10 @@
 
 Before opening the pull request:
 
-1. Push this repository to GitHub, then fill in the proof links of the statement file:
-   `python3 lean/scripts/fill_links.py KitaKen1/<repo> <full-commit-sha>`.
-   The script points the `formal_proof` link of `qex_nine` at its line in
-   `lean/Qex94/Main.lean` and fills in the repository link of the reference [Kit26].
+1. Done: the repository is at https://github.com/KitaKen1/quantum-extremal-numbers-lean, and
+   `python3 lean/scripts/fill_links.py KitaKen1/quantum-extremal-numbers-lean 7d7e3afdadabdb2fa964cea99711d05fc5652022`
+   pointed the `formal_proof` link of `qex_nine` at its line in `lean/Qex94/Main.lean` (commit
+   `7d7e3af`) and filled in the repository link of the reference [Kit26].
 2. Copy `QuantumExtremalNumber.lean` to
    `FormalConjectures/Arxiv/2411.12208/QuantumExtremalNumber.lean` in a fork of Formal
    Conjectures, replace its first comment by the standard header of Formal Conjectures
@@ -55,7 +55,7 @@ The exact values for `n = 4, 7, 8` are those of Table I of the paper. The docstr
 and the upper bound 792 from Table I, and the upper bounds 208 and 422 from [Kit26], which improve
 the bounds 240 and 461 of the table.
 
-Proofs: https://github.com/KitaKen1/REPO (fill in after pushing). The external project imports
+Proofs: https://github.com/KitaKen1/quantum-extremal-numbers-lean. The external project imports
 Formal Conjectures at commit `df3f12d7bd06feb3f71ae37abae0ca7cb798d9b1`, copies the
 definitions of this file verbatim (an audit script checks the copy character for character),
 and proves `qex_nine` with this exact statement, as well as `Qex 10 5 ≤ 208` and

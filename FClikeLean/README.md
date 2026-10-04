@@ -34,9 +34,8 @@ request mentions arXiv:2411.12208 (GitHub search, 2026-10-03).
   and 422 from this repository ([Kit26]). The `formal_proof` link of `qex_nine` points to the
   theorem of the same name in [`../lean/Qex94/Main.lean`](../lean/Qex94/Main.lean); the upper
   bounds are proved in [`../lean/Qex94/Main10.lean`](../lean/Qex94/Main10.lean) and
-  [`../lean/Qex94/Main11.lean`](../lean/Qex94/Main11.lean). Before publishing, the placeholders
-  `REPO` and `COMMIT` are filled in by
-  `python3 ../lean/scripts/fill_links.py KitaKen1/<repo> <commit>`.
+  [`../lean/Qex94/Main11.lean`](../lean/Qex94/Main11.lean). The link points to commit
+  [`7d7e3af`](https://github.com/KitaKen1/quantum-extremal-numbers-lean/tree/7d7e3afdadabdb2fa964cea99711d05fc5652022).
 
 As in Formal Conjectures, every research statement is closed `by sorry`, including `qex_nine`,
 which has a `formal_proof` link; the proofs live in [`../lean/`](../lean/) and
