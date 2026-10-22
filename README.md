@@ -105,6 +105,21 @@ outside `A`, `reducedDensity A ψ = M Mᴴ` is the partial trace
 exactly that the maximum number of maximally mixed four-qubit reductions of a normalized
 nine-qubit state is 112.
 
+## Fixed-commit Comparator verification
+
+[`leanWithComparator/`](leanWithComparator/) reproduces the three proof checks requested
+in [Formal Conjectures PR #6836](https://github.com/google-deepmind/formal-conjectures/pull/6836).
+It compares an independent copy of the PR statements against the original proof at
+commit `7d7e3afdadabdb2fa964cea99711d05fc5652022`, checks transitive axioms and kernel
+acceptance in Comparator, audits all 20 original targets, and runs
+`leanchecker --fresh Solution` over the complete imported environment. A correct control
+must pass, while altered-statement, extra-axiom and `sorry` controls must be rejected.
+
+The [public workflow](https://github.com/KitaKen1/quantum-extremal-numbers-lean/actions/workflows/qex94-comparator.yml)
+records full logs and receipts. Reproduction instructions and exact tool pins are in
+[`leanWithComparator/README.md`](leanWithComparator/README.md). This is an author-controlled
+CI reproduction, rather than an independent third-party review.
+
 ## Mathematical explanation (AI generated)
 
 This is a sketch of the mathematics that the Lean proof formalizes.

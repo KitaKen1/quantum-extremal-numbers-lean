@@ -1,0 +1,22 @@
+name = "qex94_comparator"
+version = "0.1.0"
+defaultTargets = ["Solution"]
+
+[leanOptions]
+autoImplicit = false
+relaxedAutoImplicit = false
+
+[[require]]
+name = "qex94"
+git = "https://github.com/KitaKen1/quantum-extremal-numbers-lean"
+rev = "7d7e3afdadabdb2fa964cea99711d05fc5652022"
+subDir = "lean"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "Audit"

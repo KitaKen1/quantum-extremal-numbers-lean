@@ -1,0 +1,11 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "QuantumExtremalNumber.qex_nine",
+    "QuantumExtremalNumber.qex_ten.variants.upper",
+    "QuantumExtremalNumber.qex_eleven.variants.upper"
+  ],
+  "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+  "enable_nanoda": false
+}

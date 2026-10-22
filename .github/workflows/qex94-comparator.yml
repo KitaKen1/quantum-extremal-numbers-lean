@@ -1,0 +1,91 @@
+name: Qex94 fixed-commit Comparator verification
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'leanWithComparator/**'
+      - '.github/workflows/qex94-comparator.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: qex94-comparator-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  comparator:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 65
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - name: Install Lean manager and prepare disposable runner
+        run: |
+          test "$GITHUB_ACTIONS" = true
+          test "$RUNNER_ENVIRONMENT" = github-hosted
+          test "$RUNNER_OS" = Linux
+          # Only remove unused SDKs from this disposable GitHub-hosted VM.
+          # The runner, workspace, Lean installation and proof sources are retained.
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup \
+            /opt/hostedtoolcache /usr/share/swift /usr/local/share/powershell /usr/lib/jvm \
+            /usr/local/share/boost /opt/microsoft /opt/google /opt/az /usr/local/share/chromium
+          sudo docker system prune -af > /dev/null 2>&1 || true
+          curl -sSfL https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+          echo "COMPARATOR_TOOLS=$RUNNER_TEMP/qex94-comparator-tools" >> "$GITHUB_ENV"
+          sudo apt-get update -qq
+          sudo apt-get install -y -q time
+          available=$(df --output=avail -BG / | tail -1 | tr -dc 0-9)
+          if [ "$available" -ge 32 ]; then
+            sudo fallocate -l 16G /qex94-swap
+            sudo chmod 600 /qex94-swap
+            sudo mkswap /qex94-swap
+            sudo swapon /qex94-swap
+          fi
+          free -h
+          df -h /
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+      - name: Fetch locked proof and trusted Mathlib cache
+        working-directory: leanWithComparator
+        run: lake exe cache get
+      - name: Check exact proof sources and independent PR specification
+        working-directory: leanWithComparator
+        run: python3 scripts/check-inputs.py --require-proof --receipt-dir evidence/inputs
+      - name: Record disk and memory after dependency retrieval
+        run: |
+          df -h / | tee leanWithComparator/evidence/disk-before-check.txt
+          free -h | tee leanWithComparator/evidence/memory-before-check.txt
+      - name: Install pinned Comparator, exporter and Landrun
+        run: bash leanWithComparator/scripts/install-tools.sh
+      - name: Accept a correct control and reject three invalid controls
+        run: bash leanWithComparator/scripts/negative-controls.sh
+      - name: Compare, audit all original targets and replay the complete environment
+        run: bash leanWithComparator/scripts/verify.sh
+      - name: Require all checks to have completed
+        run: |
+          test "$(cat leanWithComparator/evidence/status.txt)" = PASS
+          python3 - <<'PY'
+          import json
+          d=json.load(open('leanWithComparator/evidence/result.json'))
+          assert d['status']=='PASS' and len(d['targets'])==3
+          assert all(d[k] for k in ['comparator','axiom_audit','original_audit','fresh_replay','negative_controls'])
+          PY
+      - name: Upload full success or failure evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: qex94-comparator-${{ github.run_id }}-${{ github.run_attempt }}
+          path: leanWithComparator/evidence/
+          retention-days: 90
+          if-no-files-found: warn
