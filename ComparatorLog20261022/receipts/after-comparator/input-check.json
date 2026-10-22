@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-22T03:08:15.574202+00:00",
+  "checked_repository_commit": "0ff64b704b2532acaae014166a6d8d6f44057587",
+  "proof_commit": "7d7e3afdadabdb2fa964cea99711d05fc5652022",
+  "pr_head": "3ea4821704dfde365879d6a2d6f2f58e8f8d54e9",
+  "targets": [
+    "QuantumExtremalNumber.qex_nine",
+    "QuantumExtremalNumber.qex_ten.variants.upper",
+    "QuantumExtremalNumber.qex_eleven.variants.upper"
+  ],
+  "definitions_match_pr": true,
+  "dependency_commits": {
+    "qex94": "7d7e3afdadabdb2fa964cea99711d05fc5652022",
+    "formal_conjectures": "df3f12d7bd06feb3f71ae37abae0ca7cb798d9b1",
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "pins_sha256": "e0a4766c30d4d5a0e698e097e274502be395577e763bb22f518da8e60e86cfa8",
+  "files_sha256": {
+    "Challenge.lean": "06dfd77f870fefe95343615791024e0ba6a61ad8d48ff7e112304f50529184b1",
+    "Solution.lean": "324f2ba0e7509bee9c45c2239090ba4632797d88c3788802f35a655ee83f1097",
+    "Audit.lean": "d62b9bb8291c8132cca6f20d9e5c05c3fbe0b8f96ae7e7ddfa9e2f44e11e2c67",
+    "comparator.json": "ac9c03d69f3b47032d94432dea02394896dd7c67072246edf2db53d626d1789d",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "lakefile.toml": "6ccc69e4a03f1e38e27634b135be79419968617feab715ef1f0509bb962c632e",
+    "lake-manifest.json": "f15e397479607e1151fef2a895f36b54559f67b3bb18549f779c808b0e553413",
+    "sources/pr-statement.lean": "e640be1ce8a877dd7d3374ec9196f6f298545916438ea6eb29fe718d491dc7fd",
+    "scripts/check-axioms.py": "5c2cd30bf0521b8c00f42f0850f7d4b48f1a05107a9c77ed36e592dd707fb866",
+    "scripts/check-inputs.py": "c15ec0141ee441bd11c9ffbce02f1a55b6761a2e7b4123e2046c5b492cc9811b",
+    "scripts/check-tools.py": "10b494250f17998892c4053166c39177b3ee665c06797ff09747f7de24e155df",
+    "scripts/install-tools.sh": "32d7d6021e7e4f5826d7b31e7cfcba7af40c45cfe1b8db6cafc792301bb3a1a5",
+    "scripts/negative-controls.sh": "78d1827a225695ef5360125cd1f36f6f16944bf8c7fdd7aed40a5ad62e8dd428",
+    "scripts/sandbox-run.sh": "5077cb06e346f75dd6e5dd315c5c8161927a8d8fd5e6be6e40b928cd4edcfb37",
+    "scripts/verify.sh": "0ed2f84585b51c62d4edce9ea80e169efa74fb680783d769d7d7ad0281dda302",
+    "../.github/workflows/qex94-comparator.yml": "9daafd2e9440569ef3bcdde0e91b188a7ea40c18652a4d58b484708ba509c97d"
+  },
+  "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+  "run": {
+    "GITHUB_REPOSITORY": "KitaKen1/quantum-extremal-numbers-lean",
+    "GITHUB_SHA": "0ff64b704b2532acaae014166a6d8d6f44057587",
+    "GITHUB_RUN_ID": "39714466024",
+    "GITHUB_RUN_ATTEMPT": "1"
+  }
+}

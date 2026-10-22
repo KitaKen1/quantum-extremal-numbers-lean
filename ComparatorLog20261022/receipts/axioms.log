@@ -1,0 +1,9 @@
+QuantumExtremalNumber.qex_nine : QuantumExtremalNumber.Qex 9 4 = 112
+Audit.lean:3:0: warning: This file has no module docstring (`/-! ... -/`). Add one after the imports to document the file.
+
+Note: This linter can be disabled with `set_option linter.style.moduleDocstring false`
+QuantumExtremalNumber.qex_ten.variants.upper : QuantumExtremalNumber.Qex 10 5 ≤ 208
+QuantumExtremalNumber.qex_eleven.variants.upper : QuantumExtremalNumber.Qex 11 5 ≤ 422
+'QuantumExtremalNumber.qex_nine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantumExtremalNumber.qex_ten.variants.upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+'QuantumExtremalNumber.qex_eleven.variants.upper' depends on axioms: [propext, Classical.choice, Quot.sound]

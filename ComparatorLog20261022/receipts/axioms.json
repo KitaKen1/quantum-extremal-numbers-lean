@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "targets": {
+    "QuantumExtremalNumber.qex_nine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.qex_ten.variants.upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.qex_eleven.variants.upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-22T03:38:46.516337+00:00",
+  "proof_commit": "7d7e3afdadabdb2fa964cea99711d05fc5652022",
+  "targets": [
+    "QuantumExtremalNumber.qex_nine",
+    "QuantumExtremalNumber.qex_ten.variants.upper",
+    "QuantumExtremalNumber.qex_eleven.variants.upper"
+  ],
+  "comparator": true,
+  "axiom_audit": true,
+  "original_audit": true,
+  "fresh_replay": true,
+  "negative_controls": true,
+  "independent_third_party_review": false,
+  "receipt_sha256": {
+    "after-comparator/input-check.json": "74a935b5385fa47b0ae46cb7a2d820288663b7e116eef377172314a7ee294622",
+    "after-replay/input-check.json": "dc713e767f9000b6be7956db6a27457eb7e1f017169cd3b193579650c40ba822",
+    "axioms.json": "4e89a75a3c366720f79da2e778ba68152bc2673f695ffbf20d64c628791d2b9a",
+    "axioms.log": "5c3a537ae5bf0e5428b8a0f17fea73efded3669a39ad0264b6fa6992aeb397d6",
+    "before/input-check.json": "50a6a6ebac8505121ab89ef4625d91cfce45b3a7d996ccd2b65b4f950126ed17",
+    "checker-environment.json": "50c2e9b25502235ac7baa34b2a27180a291b74ae970c989b3fc5640ab3342b78",
+    "comparator.log": "f7e6cc8f9d3a341f3bc8cf579f997e3c305d9662c5b12ad59afb36760fcb5a9d",
+    "controls/ForbiddenAxiom.log": "97521e034f518410a272794eb1d6ac0e9fbc5da48e8318188d4d1c22f56f5f90",
+    "controls/Good.log": "2a30cacb28654025af34aa391d2fcd32c2b5fa0d0ef14d73affe09a53ecc1f86",
+    "controls/SorrySolution.log": "e2d646e1d1d477368499a8afd1e9b55d12bda7ac207734ca7086d873c9a6fe4c",
+    "controls/WrongStatement.log": "90e3a80a83d784b53be86ded100f70ea4ae539fe0191e3602de74900123336c3",
+    "disk-before-check.txt": "ed3c89f89746073549f76bd8af84cd0465c1e5ca2bc4f7150d3811eee3e754ef",
+    "environment.txt": "13d89dc5d63c59a36b982b4c99a0ba9610d54b595a3e04130acae5176790280a",
+    "fresh-replay-time.log": "25efd875f9366bec205a518103dc1a1fe271da4eff9240f4c50a2ed1692f559d",
+    "fresh-replay.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "inputs/input-check.json": "53db29b7994eb33e0b8f87090945a43f1447a752941c31a065d6d95b956266c7",
+    "memory-before-check.txt": "96fed8ec82c37e906485b3badf54982534398d7a66c172422d99a3cc5be5a12c",
+    "original-audit.json": "659ae8515693ed8301a7f4be66418a8233c9a9f1b770faad1ad57dd3ccf1eed1",
+    "original-audit.log": "d511a2dfe21a110ac8414d6f1e828f5956ab90b0c07701e887da3c7799ca5e34",
+    "original-fc-statement.log": "910e64349bd4703706b07204274fdc2fae69900f2a19382c2266fa6dc2327755"
+  }
+}

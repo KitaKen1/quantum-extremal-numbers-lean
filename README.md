@@ -120,6 +120,10 @@ records full logs and receipts. Reproduction instructions and exact tool pins ar
 [`leanWithComparator/README.md`](leanWithComparator/README.md). This is an author-controlled
 CI reproduction, rather than an independent third-party review.
 
+The [2026-10-22 public CI run](https://github.com/KitaKen1/quantum-extremal-numbers-lean/actions/runs/39714466024)
+passed all checks in 38 min 20 sec. The [complete receipts and result record](ComparatorLog20261022/)
+are committed in this repository for durable reference.
+
 ## Mathematical explanation (AI generated)
 
 This is a sketch of the mathematics that the Lean proof formalizes.

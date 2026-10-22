@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-22T05:00:48.247494+00:00",
+  "repository": "KitaKen1/quantum-extremal-numbers-lean",
+  "private": false,
+  "branch": "main",
+  "run_id": 39714466024,
+  "run_attempt": 1,
+  "run_url": "https://github.com/KitaKen1/quantum-extremal-numbers-lean/actions/runs/39714466024",
+  "tested_commit": "0ff64b704b2532acaae014166a6d8d6f44057587",
+  "proof_commit": "7d7e3afdadabdb2fa964cea99711d05fc5652022",
+  "pr_head": "3ea4821704dfde365879d6a2d6f2f58e8f8d54e9",
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "targets": [
+    "QuantumExtremalNumber.qex_nine",
+    "QuantumExtremalNumber.qex_ten.variants.upper",
+    "QuantumExtremalNumber.qex_eleven.variants.upper"
+  ],
+  "checks": {
+    "comparator": "PASS",
+    "axiom_audit": "PASS",
+    "original_twenty_theorem_audit": "PASS",
+    "original_fc_statement_compiles": "PASS",
+    "fresh_replay": "PASS",
+    "negative_controls": "PASS",
+    "downloaded_receipt_integrity": "PASS"
+  },
+  "axioms": {
+    "QuantumExtremalNumber.qex_nine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.qex_ten.variants.upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.qex_eleven.variants.upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "independent_third_party_review": false,
+  "receipt_files_verified": 20,
+  "timings_seconds": {
+    "job": 2300.0,
+    "comparator_including_build": 234.305,
+    "full_environment_fresh_replay": 1817.24
+  },
+  "artifact_sha256": {
+    "12399219809-qex94-comparator-39714466024-1.zip": "468487dd3884bbe561cb0b84293b0f50e54aef1be3ca11bcfa62ee26822d3bb5"
+  },
+  "published_evidence_path": "ComparatorLog20261022",
+  "github_job_log_sha256": {
+    "github-job-logs/0_comparator.txt": "879610945a84d3d8d3159951f5820c29999450123fb557bbc2a44bc2039e8fdf",
+    "github-job-logs/comparator/system.txt": "e6f64487efe7d5ca97b4f922b1f5290027e441e20f15d264dd31968029610075"
+  }
+}

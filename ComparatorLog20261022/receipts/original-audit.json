@@ -1,0 +1,105 @@
+{
+  "status": "PASS",
+  "targets": {
+    "QuantumExtremalNumber.qex_nine": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.numMaximallyMixed_le_112": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.exists_state_112": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.Abstract.abstract_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.shadow_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.pur_le_two_mul_pur_insert": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.purC_of_isMaximallyMixedOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.purC_empty_of_norm_eq_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.qex_ten.variants.upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.numMaximallyMixed_le_208": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.Abstract10.abstract_bound_ten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.shadow_nonneg_set": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.shadow_ten": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.qex_eleven.variants.upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.numMaximallyMixed_le_422": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.Abstract11.abstract_bound_eleven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.KK11.forty_le_card_shadow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.subsystem_shadow_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.moebius_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "QuantumExtremalNumber.shadow_eleven": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}
